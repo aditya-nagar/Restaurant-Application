@@ -24,7 +24,7 @@ const Reservation = () => {
 
     try {
       const { data } = await axios.post(
-        "https://restaurant-application-wpx1.onrender.com",
+        "https://restaurant-application-backend-uodh.onrender.com",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
