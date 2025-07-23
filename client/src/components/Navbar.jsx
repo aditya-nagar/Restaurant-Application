@@ -14,13 +14,13 @@ const Navbar = () => {
           <div className="links">
             {data[0].navbarLinks.map((element) => (
               <Link
-                to={element.link}        // This should match the 'id' of the section
+                to={element.link} 
                 spy={true}
                 smooth={true}
                 duration={500}
                 key={element.id}
                 offset={-70}             // Adjust scroll offset if header overlaps
-                onClick={() => setShow(false)} // Close menu on link click (optional)
+                onClick={() => setShow(false)}
               >
                 {element.title}
               </Link>
